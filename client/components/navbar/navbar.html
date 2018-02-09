@@ -7,14 +7,95 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">drogueria</a>
+      <a href="/" class="navbar-brand">Drogueria</a>
     </div>
     <div uib-collapse="nav.isCollapsed" class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav">
-        <li ng-repeat="item in nav.menu" ui-sref-active="active">
-            <a ui-sref="{{item.state}}">{{item.title}}</a>
+        <li class=""  >
+            <a ng-click="vm.ocultarCollapse()" href="#Medicamentos" ui-sref-active="active" class="navbar-link text-center BotonMedicamentos">Medicamentos</a>
+        </li>
+        <div class="col-xs-12 col-sm-6 col-lg-5 hidden-md hidden-lg" id="Medicamentos">
+              <div class="thumbnail Medicamentos">
+                <h3>Medicamentos</h3>
+                <img src="../../assets/images/canguro.jpg" alt="Imagen del canguro" class="img-thumbnail top Canguro">
+                <div class="caption col-md-4">
+                  <h4>Medicamentos</h4>
+                  <ul>
+                    <li>Opción 1</li>
+                    <li>Opción 2</li>
+                    <li>Opción 3</li>
+                  </ul>
+                </div>
+                <div class="Destacados col-md-7">
+                  <h4>Destacados</h4>
+                  <img src="../../assets/images/medicam.jpg" alt="" class="img-responsive Image" />
+                  <img src="../../assets/images/Medicines.jpg" alt="" class="img-responsive Image" />
+                </div>
+              </div>
+        </div>
+        <li >
+            <a ui-sref="main" ui-sref-active="active" class="navbar-link text-center" ng-click="nav.ocultarCollapse()">Cuidado Capilar</a>
+        </li>
+        <li >
+            <a ui-sref="main" ui-sref-active="active" class="navbar-link text-center" ng-click="nav.ocultarCollapse()">Cuidado del Bebe</a>
+        </li>
+        <li >
+            <a ui-sref="main" ui-sref-active="active" class="navbar-link text-center" ng-click="nav.ocultarCollapse()">Aseo Personal</a>
+        </li>
+        <li >
+            <a ui-sref="main" ui-sref-active="active" class="navbar-link text-center" ng-click="nav.ocultarCollapse()">Tintes</a>
+        </li>
+        <li >
+            <a ui-sref="main" ui-sref-active="active" class="navbar-link text-center" ng-click="nav.ocultarCollapse()">Aseo Oral</a>
         </li>
       </ul>
     </div>
-  </div>
+
+    <div class="col-xs-12 col-sm-6 col-lg-5 hidden-md hidden-lg" id="Medicamentos">
+          <div class="thumbnail Medicamentos">
+            <h3>Cuidado Capilar</h3>
+            <img src="../../assets/images/canguro.jpg" alt="Imagen del canguro" class="img-thumbnail top Canguro">
+            <div class="caption col-md-4">
+              <h4>Cuidado capilar</h4>
+              <ul>
+                <li>Opción 1</li>
+                <li>Opción 2</li>
+                <li>Opción 3</li>
+              </ul>
+            </div>
+            <div class="Destacados col-md-7">
+              <h4>Destacados</h4>
+              <img src="../../assets/images/medicam.jpg" alt="" class="img-responsive Image" />
+              <img src="../../assets/images/Medicines.jpg" alt="" class="img-responsive Image" />
+            </div>
+          </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-5 hidden-md hidden-lg" id="Medicamentos">
+          <div class="thumbnail Medicamentos">
+            <h3>Cuidado del Bebe</h3>
+            <img src="../../assets/images/canguro.jpg" alt="Imagen del canguro" class="img-thumbnail top Canguro">
+            <div class="caption col-md-4">
+              <h4>Cuidamos tu familia</h4>
+              <ul>""
+                <li>Opción 1</li>
+                <li>Opción 2</li>
+                <li>Opción 3</li>
+              </ul>
+            </div>
+            <div class="Destacados col-md-7">
+              <h4>Destacados</h4>
+              <img src="../../assets/images/medicam.jpg" alt="" class="img-responsive Image" />
+              <img src="../../assets/images/Medicines.jpg" alt="" class="img-responsive Image" />
+            </div>
+          </div>
+    </div>
+  <!--  <div ng-if = "vm.positions[2]" class="hidden-lg hidden-md">
+            <p style="font-weight: bold;">{{vm.valor}}</p>
+            <p>-opcion 1</p>
+          </div>
+          <li  ui-sref-active="active" class="col-lg-2 col-md-2 col-sm-12 menuItem4" data-toggle="dropdown" ng-mouseover = "vm.pasoMouse('Personal', 3)" ng-mouseleave = "vm.quitoMouse()">
+              <a ui-sref="{{vm.menu[3].state}}">{{vm.menu[3].title}}</a>
+          </li>
+</div>-->
+
 </div>
