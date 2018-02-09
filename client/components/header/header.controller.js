@@ -9,7 +9,7 @@ class HeaderComponent {
 
 angular.module('drogueriaApp')
   .component('header', {
-    templateUrl: 'componets/header/header.html',
+    templateUrl: 'components/header/header.html',
     controller: HeaderComponent
   });
 
