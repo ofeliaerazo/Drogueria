@@ -2,16 +2,25 @@
 
 class NavbarController {
   //start-non-standard
-  menu = [{
-    'title': 'Home',
-    'state': 'main'
-  }];
 
+  ocultarCollapse(){
+      $('.navbar-collapse').collapse('hide');
+    }
+
+
+
+
+/*  menu = [{
+    'title': 'Medicamentos',
+    'state': 'main'
+  }];*/
+
+    /*
   isCollapsed = true;
   //end-non-standard
 
   constructor() {
-    }
+  }*/
 }
 
 angular.module('drogueriaApp')
