@@ -12,6 +12,8 @@ angular.module('drogueriaApp')
     templateUrl: 'components/header/header.html',
     controller: HeaderComponent,
     controllerAs:'vm'
+
+
   });
 
 })();
